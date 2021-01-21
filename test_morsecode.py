@@ -166,3 +166,18 @@ class TestMorseCode(unittest.TestCase):
             "K": "-.-", "X": "-..-", "J": ".---", "W": ".--", "L": ".-..", "Y": "-.--", "M": "--", "Z": "--.."
         }
         return morse_code
+
+
+if __name__ == '__main__':
+    TestMorseCode().test_main()
+    TestMorseCode().test_get_cleaned_english_sentence()
+    TestMorseCode().test_is_help_command()
+
+    TestMorseCode().test_is_validated_english_sentence()
+    TestMorseCode().test_is_validated_morse_code()
+
+    TestMorseCode().test_encoding_character()
+    TestMorseCode().test_encoding_sentence()
+
+    TestMorseCode().test_decoding_character()
+    TestMorseCode().test_decoding_sentence()
